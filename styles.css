@@ -1,0 +1,87 @@
+body {
+    background-image: url(./img/vecteezy_abstract-technology-futuristic-neon-circle-glowing-blue-and_10671880.jpg);
+    background-size: cover;
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    width: 400px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(31, 20, 92);
+    border-radius: 5px;
+    align-items: center;
+}
+.form h4 {
+    color: #ffff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 300;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+.box input,button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    font-size: 16px;
+}
+.box input {
+    background-color: rgba(91, 46, 133, 0.365);
+    color: #ffff;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 1px;
+    text-indent: 3px;
+    background-image: url(./img/icons8-user-24.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 20px;
+    padding-left: 35px;
+}
+.box input:nth-child(2) {
+    background-image: url(./img/icons8-lock-50.png);
+}
+.box input::placeholder {
+    font-size: 15px;
+    color: #c0b4b4;
+}
+.box button {
+    background-color: rgba(66, 87, 105, 0.671);
+    cursor: pointer;
+    color: #c5baba;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+}
+
+.suggest {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: #ffff;
+}
+.suggest .forgot {
+    color: rgb(156, 81, 227);
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+@media (max-width: 418px) {
+    .form {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+}
